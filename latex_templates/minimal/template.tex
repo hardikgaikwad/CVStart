@@ -1,0 +1,70 @@
+% CVstart Standalone ATS-Optimized Minimalist Template
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfnewwindow=true
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{Alex Morgan}}\\[4pt]
+    {\large Senior Software Engineer}\\[4pt]
+    \href{mailto:alex.morgan@example.com}{alex.morgan@example.com} $\vert$ +1 (555) 019-2834 $\vert$ San Francisco, CA $\vert$ \href{https://github.com/alexmorgan}{github.com/alexmorgan}
+\end{center}
+
+\vspace{4pt}
+
+% Professional Summary
+\section{Summary}
+Senior Software Engineer with 7+ years of experience designing high-throughput distributed backends, microservices, and agentic AI systems. Proven expertise in Python, Go, and cloud architectures.
+
+% Experience
+\section{Experience}
+\textbf{Apex Cloud Solutions} \hfill San Francisco, CA\\
+\textit{Lead Backend Engineer} \hfill 2022 -- Present
+\begin{itemize}
+    \item Architected event-driven microservices handling 50k+ requests/sec using Python, FastAPI, and Kafka.
+    \item Reduced 99th-percentile latency by 42\% through Redis caching and optimized database query execution plans.
+    \item Mentored 6 junior and mid-level engineers in distributed systems design and reliable testing practices.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Nimbus Systems} \hfill Austin, TX\\
+\textit{Software Engineer} \hfill 2019 -- 2022
+\begin{itemize}
+    \item Designed and shipped public-facing RESTful APIs integrated with Stripe and third-party accounting providers.
+    \item Automated CI/CD pipeline deployments using Docker and GitHub Actions, cutting release cycles from weekly to daily.
+\end{itemize}
+
+% Education
+\section{Education}
+\textbf{University of California, Berkeley} \hfill Berkeley, CA\\
+B.S. in Computer Science \hfill 2015 -- 2019
+
+% Skills
+\section{Technical Skills}
+\textbf{Languages:} Python, Go, TypeScript, SQL, Bash\\
+\textbf{Frameworks \& Libraries:} Django, FastAPI, React, Node.js\\
+\textbf{Cloud \& DevOps:} Docker, Kubernetes, AWS (ECS, RDS, S3), Git, CI/CD
+
+\end{document}

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+    /* Light Minimal Editorial Design Tokens */
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: #F7F7F7;
+    --color-bg-panel: #F2F2F2;
+    --color-bg-hover: #F0F0F0;
+    --color-bg-active: #EAEAEA;
+
+    --color-text-primary: #222222;
+    --color-text-secondary: #666666;
+    --color-text-muted: #888888;
+
+    --color-border: #DEDEDE;
+    --color-border-dark: #222222;
+
+    --color-action-bg: #222222;
+    --color-action-text: #FFFFFF;
+
+    --color-success: #2e7d32;
+    --color-warning: #b26a00;
+    --color-error: #c62828;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Force sharp square edges across standard form and card controls */
+  button, input, select, textarea, [role="dialog"] {
+    border-radius: 0px !important;
+  }
+}
+
+/* Restrained, Minimal Light Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5D5D5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A8A8;
+}
+
+/* Light Mode PDF Canvas Frame */
+.pdf-canvas-container {
+  background-color: #F2F2F2;
+}
+
+.pdf-document-sheet {
+  background-color: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
